@@ -1,39 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1773510281011,
+  "lastUpdate": 1773570603377,
   "repoUrl": "https://github.com/czlonkowski/n8n-mcp",
   "entries": {
     "n8n-mcp Benchmarks": [
-      {
-        "commit": {
-          "author": {
-            "email": "56956555+czlonkowski@users.noreply.github.com",
-            "name": "Romuald Członkowski",
-            "username": "czlonkowski"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "130dd44ea5e6172870a1d6e2dd2ab789452ea819",
-          "message": "chore: update n8n to 1.123.4 and bump version to 2.28.9 (#478)\n\n- Updated n8n from 1.122.4 to 1.123.4\n- Updated n8n-core from 1.121.1 to 1.122.1\n- Updated n8n-workflow from 1.119.1 to 1.120.0\n- Updated @n8n/n8n-nodes-langchain from 1.121.1 to 1.122.1\n- Rebuilt node database with 545 nodes (439 from n8n-nodes-base, 106 from @n8n/n8n-nodes-langchain)\n- Updated README badge with new n8n version\n- Updated CHANGELOG with dependency changes\n\nConceived by Romuald Członkowski - https://www.aiadvisors.pl/en\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-authored-by: Romuald Członkowski <romualdczlonkowski@MacBook-Pro-Romuald.local>\nCo-authored-by: Claude <noreply@anthropic.com>",
-          "timestamp": "2025-12-08T22:54:50+01:00",
-          "tree_id": "667d3a9dd9770565c0aa319255f0bf2110cbc2f5",
-          "url": "https://github.com/czlonkowski/n8n-mcp/commit/130dd44ea5e6172870a1d6e2dd2ab789452ea819"
-        },
-        "date": 1765230995549,
-        "tool": "customSmallerIsBetter",
-        "benches": [
-          {
-            "name": "sample - array sorting - small",
-            "value": 0.0136,
-            "range": "0.3096",
-            "unit": "ms",
-            "extra": "73341 ops/sec"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -1532,6 +1501,37 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/czlonkowski/n8n-mcp/commit/599bc664d094b1729f71ef523c9d35d16a45f833"
         },
         "date": 1773510280335,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "sample - array sorting - small",
+            "value": 0.0136,
+            "range": "0.3096",
+            "unit": "ms",
+            "extra": "73341 ops/sec"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "56956555+czlonkowski@users.noreply.github.com",
+            "name": "Romuald Członkowski",
+            "username": "czlonkowski"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "65ab94deb27b01b3f1eb084e1d2e8f7b74ad4465",
+          "message": "fix: code validator false positives and null property removal (#294, #293, #611) (#637)\n\n- Fix $() node reference triggering \"Invalid $ usage\" warning by adding ( and _ to regex lookahead\n- Fix helper function primitive returns triggering \"Cannot return primitive values\" error\n- Fix null values in diff engine causing Zod validation errors — null now deletes properties\n- Update property removal docs from undefined to null\n\nConceived by Romuald Członkowski - https://www.aiadvisors.pl/en\n\nCo-authored-by: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "timestamp": "2026-03-15T11:26:44+01:00",
+          "tree_id": "bf5205fec682486a742d8355ad764c390977ff5d",
+          "url": "https://github.com/czlonkowski/n8n-mcp/commit/65ab94deb27b01b3f1eb084e1d2e8f7b74ad4465"
+        },
+        "date": 1773570602972,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
